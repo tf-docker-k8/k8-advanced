@@ -37,9 +37,9 @@ spec:
         envFrom:
         - configMapRef:
             name: mysql-config
-          volumeMounts:
-          - name: mysql
-            mountPath: /var/lib/mysql
+        volumeMounts:
+        - name: mysql
+          mountPath: /var/lib/mysql
   # this is PVC
   volumeClaimTemplates:
   - metadata:
